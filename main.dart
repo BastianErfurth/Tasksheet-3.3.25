@@ -9,4 +9,8 @@ void main() {
     (hasParentalConsent && age >= (movieAgeRating - 2));
     print("Filmabend erlaubt");
   }
+
+  age = 13;
+  hasParentalConsent = false;
+  movieAgeRating = 16;
 }
