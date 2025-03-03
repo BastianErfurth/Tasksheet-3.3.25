@@ -21,4 +21,14 @@ void main() {
   } else {
     print("Filmabend NICHT erlaubt");
   }
+
+  age = 17;
+
+  if (age >= movieAgeRating) {
+    print("OK für Filmabend");
+  } else if (hasParentalConsent && age >= (movieAgeRating - 2)) {
+    print("Filmabend erlaubt");
+  } else {
+    print("Filmabend NICHT erlaubt");
+  }
 }
