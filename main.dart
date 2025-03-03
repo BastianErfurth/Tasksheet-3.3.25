@@ -5,9 +5,11 @@ void main() {
 
   if (age >= movieAgeRating) {
     print("OK für Filmabend");
-  } else
-    (hasParentalConsent && age >= (movieAgeRating - 2));
-  print("Filmabend erlaubt");
+  } else if (hasParentalConsent && age >= (movieAgeRating - 2)) {
+    print("Filmabend erlaubt");
+  } else {
+    print("Filmabend NICHT erlaubt");
+  }
 
   age = 13;
   hasParentalConsent = false;
